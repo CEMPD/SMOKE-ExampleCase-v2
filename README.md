@@ -1,26 +1,55 @@
-# SMOKE-TestCase
-SMOKE Test Case Using EPA's Emission Modeling Platform format
+# SMOKE-ExampleCase-v2
+SMOKE ExampleCase-v2 Using EPA's Emission Modeling Platform format
+
+This SMOKE Example Case uses data from EPA's 2018v2 emissions modeling platform (https://www.epa.gov/air-emissions-modeling/2018v2-emissions-modeling-platform)
+
+In stead of using the 12US1 (12 km grid spacing) that cover entier Continental United State and part of Canada and Mexico, this Example Case was developed for a smaller domain in 12 km grid spacing with 25x25 grid cells covering Long Island, New York and parts of the surrounding states. The specific grid comes from the Long Island Sound Tropospheric Ozone Study (LISTOS) (https://www-f.nescaum.org/documents/listos)
+
+In this example case, the CMAQ inputs produced per day are:
++ One file of gridded, low-level emissions data
++ Multiple files containing inline point source emissions data
+
+Entire dataset including SMOKE run scripts for this Example Case could be downloaded from https://drive.google.com/file/d/11ovMavOSf2ffxNukc_KJs5DfTy2tCdqQ/view?usp=share_link
 
 The files in this repository serve as a suite of tests for the SMOKE programs and rely on having successfully installed SMOKE and its prerequisites in your system.
 
-Only run scripts for the test case are kept in this repository. Entire dataset for this Test Case could be downloaded from https://drive.google.com/file/d/11ovMavOSf2ffxNukc_KJs5DfTy2tCdqQ/view?usp=share_link 
+List of sectors covered in this Example Case:
 
-List of sectors covered in this Test Case:
-- np_oilgas  
-- pt_oilgas
-- biogenics (BEIS4) 
+(i) nonpoint source sectors
+  - afdust
+  - rail
+  - rwc
+  - fertilizer
+  - livestock
+  - nonpt
+  - nonroad
+  - np_oilgas  
 
-To test SMOKE and its components, users have to follow the next steps:
+(ii) point source sectors
+  - pt_oilgas
+  - ptnonipm
+  - ptfire-wild
+  - ptfire-rx
+  - ptegu
+  - cmv_c3_12
+  - cmv_c1c2_12
+  - airports
 
-1. Download Test Case data set from the Google Drive link above.   
+(iii) On-network Mobile source (onroad)
+
+(iv) Biogenics (BEIS4)
+
+To run this Example Case and its components, users have to follow the next steps:
+
+1. Download Example Case data set from the Google Drive link above.   
 ```
 cd someplaceinyoursystem/
-mkdir /path_to_your_SMOKE_test_folder/
-cd /path_to_your_SMOKE_test_folder/
+mkdir /path_to_your_SMOKE_example_folder/
+cd /path_to_your_SMOKE_example_folder/
 ```
 and get a copy of the SMOKE-TestCase scripts
 ```
-git clone -b main https://github.com/CEMPD/SMOKE-TestCase.git SMOKE-TestCase
+git clone -b main   https://github.com/CEMPD/SMOKE-ExampleCase-v2 SMOKE-ExampleCase
 ```
 2. Download the Test Case input data from here:  
 https://drive.google.com/file/d/11ovMavOSf2ffxNukc_KJs5DfTy2tCdqQ/view?usp=share_link
