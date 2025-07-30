@@ -11,8 +11,6 @@ In this example case, the CMAQ inputs produced per day are:
 
 Entire dataset including SMOKE run scripts for this Example Case could be downloaded from [Google Drive](https://drive.google.com/file/d/1PsxZAhui7sbSt3Qx_mN1I41q936JfiwT/view?usp=sharing)
 
-The files in this repository serve as a suite of tests for the SMOKE programs and rely on having successfully installed SMOKE and its prerequisites in your system.
-
 List of sectors covered in this Example Case:
 
 (i) nonpoint source sectors
@@ -39,6 +37,8 @@ List of sectors covered in this Example Case:
 
 (iv) Biogenics (BEIS4)
 
+The files in this repository only serve as documentations providing instructions for processing emissions of serveral example source sectors. Overall concepts of emission modeling platform and its SMOKE run script structure are subsequently introduced in these documentations assuming the source sectors are being processed in the following order: nonpoint, point, road, and beis4.
+
 To run this Example Case and its components, users have to follow the next steps:
 
 1. Download Example Case data set from the Google Drive link above.
@@ -63,7 +63,9 @@ The above comand should lists the following directories:
 
 For more information, refer to [Directory Structure](https://github.com/CEMPD/SMOKE/wiki/A.-Overall-Instructions-on-Running-SMOKE-using-EPA's-Emissions-Modeling-Platforms#directory-structure) on SMOKE Wiki page. 
 
-4. Customize SMOKE Example CAse setup for new system
+In case where the precompiled SMOKE executable programs included in this Example Case package fail to be executed on user's local machine, consult [Instruction for SMOKE Installation](https://github.com/CEMPD/SMOKE/wiki/B.-Instructions-for-SMOKE-Installation) to compile SMOKE programs. 
+
+4. Customize SMOKE Example Case setup for new system
 ```
 cd smoke_example_case/2018gg_18j/scripts/
 vim directory_definitions.csh
