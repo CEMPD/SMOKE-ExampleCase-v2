@@ -1,5 +1,4 @@
 # SMOKE-ExampleCase-v2
-SMOKE ExampleCase-v2 Using EPA's Emission Modeling Platform format
 
 This SMOKE Example Case uses data from EPA's 2018v2 emissions modeling platform (https://www.epa.gov/air-emissions-modeling/2018v2-emissions-modeling-platform)
 
