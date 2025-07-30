@@ -152,46 +152,6 @@ Navigate to the onroad run scripts directory and run the RPH run script:
 ./Monthly_onroad_RPH_daily_12US1_2018gg_18j.csh
 ```
 
-Like the previous sectors you've run, you'll see various messages displayed as the script runs. The following SMOKE programs will be run: Smkinven, Spcmat, Grdmat, Smkreport, Temporal, and Movesmrg.
-
-The onroad sector uses the "all" temporal approach, meaning hourly emissions are calculated for every day of the modeling period.
-
-Once the run script finishes, the log analyzer will print a summary indicating successful completion of the rate-per-hour processing:
-
-```
-Finished getting data
-Classifying message types...
-Total number of known messages: 102684
-Total number of unknown messages: 0
-Level 1 analysis...
-Finished classifying message types
-Testing for exit priority <=  1
-All message priorities >  1
-```
-
-As with previous sectors, each SMOKE program creates a log file. These are located in the newly created `$IMD_ROOT/onroad/RPH/logs/` directory.
-
-```
-> ls $IMD_ROOT/onroad/RPH/logs/
-```
-
-```
-grdmat_RPH_onroad_aug_2018gg_18j_12LISTOS.log
-helper_scripts_list_onroad_2018gg_18j_12LISTOS_all.txt
-movesmrg_RPH_onroad_aug_2018gg_18j_20180801_12LISTOS_cmaq_cb6ae7.log
-movesmrg_RPH_onroad_aug_2018gg_18j_20180802_12LISTOS_cmaq_cb6ae7.log
-...
-movesmrg_RPH_onroad_aug_2018gg_18j_20180831_12LISTOS_cmaq_cb6ae7.log
-smkinven_RPH_onroad_aug_2018gg_18j.log
-smkreport_RPH_onroad_aug_2018gg_18j_invgrid.log
-smkreport_RPH_onroad_aug_2018gg_18j_inv.log
-spcmat_RPH_onroad_aug_2018gg_18j_cmaq_cb6ae7.log
-temporal_RPH_onroad_aug_2018gg_18j_20180801_12LISTOS.log
-timelog_onroad_2018gg_18j_12LISTOS_all.txt
-```
-
-You'll see 31 Movesmrg log files, one for each day in the modeling period.
-
 The gridded, speciated, hourly emissions files created by Movesmrg are located in `$CASE_ROOT/premerged/onroad/RPH/`:
 
 ```
