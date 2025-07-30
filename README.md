@@ -37,7 +37,7 @@ List of sectors covered in this Example Case:
 
 (iv) Biogenics (BEIS4)
 
-The files in this repository only serve as documentations providing instructions for processing emissions of serveral example source sectors. Overall concepts of emission modeling platform and its SMOKE run script structure are subsequently introduced in these documentations assuming the source sectors are being processed in the following order: nonpoint, point, road, and beis4.
+The files in this repository only serve as documentations providing instructions for processing emissions of serveral example source sectors. Overall concepts of emission modeling platform and its SMOKE run script structure are subsequently introduced in these documentations assuming the source sectors are being processed in the order of nonpoint, point, road, beis4, and followed by running `Mrggrid` to create files ready for the air quality model.  
 
 To run this Example Case and its components, users have to follow the next steps:
 
