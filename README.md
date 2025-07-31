@@ -49,7 +49,8 @@ cd <directory where Example Case data was downloaded to>/
 tar -xvzf smoke_example_case.June2025.tar.gz
 cd smoke_example_case
 ```
-All Example Case data is now extracted to sub-folder `smoke_example_case` that contains all input data and SMOKE run scripts
+All Example Case data is now extracted to sub-folder `smoke_example_case` that contains all input data and SMOKE run scripts.
+
 3. Examine content of Example Case
 ```
 cd smoke_example_case
