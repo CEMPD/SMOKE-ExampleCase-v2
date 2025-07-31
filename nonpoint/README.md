@@ -12,6 +12,7 @@ source <directory where Example Case data was downloaded to>/smoke_example_case/
 
 Refer to [Run Script Variables](https://github.com/CEMPD/SMOKE/wiki/A.-Overall-Instructions-on-Running-SMOKE-using-EPA's-Emissions-Modeling-Platforms#run-script-variables) for descriptions of major variables in the run scripts.
 
+**NOTE:** Although `Annual_np_oilgas_12US1_2018gg_18j.csh` is provided in the SMOKE Example Case, executing this script will eventually failed due to no nonpoint Oil and Gas emission sources in the model domain of the Example Case.
 
 **Example: Processing a Nonpoint Sector (Residential Wood Combustion)**
 
@@ -81,4 +82,28 @@ All message priorities >  1
 The script has completed successfully!
 ```
 
-**NOTE:** Although `Annual_np_oilgas_12US1_2018gg_18j.csh` is provided in the SMOKE Example Case, executing this script will eventually failed due to no nonpoint Oil and Gas emission sources in the model domain of the Example Case.
+The model-ready files for the RWC sector are located in a subdirectory inside `$CASE_ROOT/premerged`:
+
+```
+> cd $CASE_ROOT/premerged/rwc
+```
+
+```
+> ls
+```
+
+You'll see 31 individual files, one file for each day in August, e.g.:
+
+```
+emis_mole_rwc_20180801_12LISTOS_cmaq_cb6ae7_2018gg_18j.ncf
+emis_mole_rwc_20180802_12LISTOS_cmaq_cb6ae7_2018gg_18j.ncf
+emis_mole_rwc_20180803_12LISTOS_cmaq_cb6ae7_2018gg_18j.ncf
+...
+emis_mole_rwc_20180831_12LISTOS_cmaq_cb6ae7_2018gg_18j.ncf
+```
+
+These files only contain the emissions from residential wood combustion. Later, you'll create similar files for additional sectors and finally merge all of these hourly gridded files together.
+
+
+Referenced Output Files for Comparison: [premerged_rwc.tar.gz](https://drive.google.com/file/d/1Ac69M6HGuh3ieBY03fbbMWlmsC2zrFyt/view?usp=share_link)
+
