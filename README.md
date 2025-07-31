@@ -14,7 +14,7 @@ Entire dataset including SMOKE run scripts for this Example Case could be downlo
 
 List of sectors covered in this Example Case:
 
-(i) nonpoint source sectors
+*(i) nonpoint source sectors*
   - afdust
   - rail
   - rwc
@@ -24,7 +24,7 @@ List of sectors covered in this Example Case:
   - nonroad
   - np_oilgas  
 
-(ii) point source sectors
+*(ii) point source sectors*
   - pt_oilgas
   - ptnonipm
   - ptfire-wild
@@ -34,16 +34,17 @@ List of sectors covered in this Example Case:
   - cmv_c1c2_12
   - airports
 
-(iii) On-network Mobile source (onroad)
+*(iii) On-network Mobile source (onroad)*
 
-(iv) Biogenics (BEIS4)
+*(iv) Biogenics (BEIS4)*
 
 The files in this repository only serve as documentations providing instructions for processing emissions of serveral example source sectors. Overall concepts of emission modeling platform and its SMOKE run script structure are subsequently introduced in these documentations assuming the source sectors are being processed in the order of nonpoint, point, road, beis4, and followed by running `Mrggrid` to create files ready for the air quality model.  
 
 To run this Example Case and its components, users have to follow the next steps:
 
-1. Download Example Case data set from the Google Drive link above.
-2. Unzip Example Case data:  
+### 1. Download Example Case data set from the Google Drive link above ###
+
+### 2. Unzip Example Case data: ###
 ```
 cd <directory where Example Case data was downloaded to>/
 tar -xvzf smoke_example_case.June2025.tar.gz
@@ -51,7 +52,7 @@ cd smoke_example_case
 ```
 All Example Case data is now extracted to sub-folder `smoke_example_case` that contains all input data and SMOKE run scripts.
 
-3. Examine content of Example Case
+### 3. Examine content of Example Case ###
 ```
 cd smoke_example_case
 ls -al
@@ -66,7 +67,7 @@ The above comand should lists the following directories:
 For more information, refer to [Directory Structure](https://github.com/CEMPD/SMOKE/wiki/A.-Overall-Instructions-on-Running-SMOKE-using-EPA's-Emissions-Modeling-Platforms#directory-structure) on SMOKE Wiki page. 
 
 
-4. Customize SMOKE Example Case setup for new system
+### 4. Customize SMOKE Example Case setup for new system ###
 ```
 cd smoke_example_case/2018gg_18j/scripts/
 vim directory_definitions.csh
@@ -75,9 +76,11 @@ Modify the setting of `INSTALL_DIR` to point to the correct path for your system
 
 Settings for other paths could remain unchanged. Refer to [Customizing EMP setups for new system](https://github.com/CEMPD/SMOKE/wiki/A.-Overall-Instructions-on-Running-SMOKE-using-EPA's-Emissions-Modeling-Platforms#customizing-emp-setups-for-new-system) for descriptions of other settings in `directory_definitions.csh` script
 
-5. Update SMOKE executables
+### 5. Update SMOKE executables (if needed) ###
 
 The precompiled SMOKE executable programs (e.g. Smkinven, Grdmat, Spcmat, etc.) included in this Example Case were compiled from SMOKE v5.1 with latest updates as of June 2025. In situation where the precompiled SMOKE executable programs fail to be executed on local machine, consult [Instruction for SMOKE Installation](https://github.com/CEMPD/SMOKE/wiki/B.-Instructions-for-SMOKE-Installation) to obtain the latest SMOKE source code and compile SMOKE programs on local machine. Refer to [Customizing EMP setups for new system](https://github.com/CEMPD/SMOKE/wiki/A.-Overall-Instructions-on-Running-SMOKE-using-EPA's-Emissions-Modeling-Platforms#customizing-emp-setups-for-new-system) for instruction to specify location of the new SMOKE executable programs (i.e., `setenv SMOKE_LOCATION <path to new SMOKE executables>`) 
+
+
 
 
 Up to this point, you are now ready to run SMOKE to process emissions for each of the source sectors in this Example Package. Refer to instruction in sub-sequence directories in this Github page for futher instructions.
