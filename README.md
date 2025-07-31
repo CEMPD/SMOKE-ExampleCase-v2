@@ -62,7 +62,7 @@ The above comand should lists the following directories:
 - `ge_dat`: contains general ancillary files including those related to speciation, spatial allocation (gridding), temporalization profiles and profile cross-reference files. This data is not case-specific
 - `ioapi`: contains precompiled utility programs from the I/O API library
 - `met`: Meteorology input files that had been processed by the Meteorology-Chemistry Interface Processor (MCIP)
-- `smoke5.1`: contains individual precompiled SMOKE executable programs (e.g. Smkinven, Grdmat, Spcmat, etc.) and various helper scripts
+- `smoke5.1`: contains individual precompiled SMOKE executable programs (e.g. Smkinven, Grdmat, Spcmat, etc. under `Linux2_x86_64ifort` directory) and various helper scripts
 
 For more information, refer to [Directory Structure](https://github.com/CEMPD/SMOKE/wiki/A.-Overall-Instructions-on-Running-SMOKE-using-EPA's-Emissions-Modeling-Platforms#directory-structure) on SMOKE Wiki page. 
 
