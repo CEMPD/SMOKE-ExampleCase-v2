@@ -82,3 +82,5 @@ README_2018gg_18j_12LISTOS_withbeis_withrwc_premerged_sectors.txt
 ```
 
 The run script automatically includes "_withbeis_withrwc" when naming the files to indicate that both the BEIS4 and RWC sectors have been merged. Depending on how you plan to run the air quality model, you may want to keep these sectors separate. To do so, edit the sectorlist file, set mergesector to N for the desired sectors, and run the merge run script.
+
+Reference Output Files for Comparison: [merged_withbeis_withrwc.tar.gz](https://drive.google.com/file/d/1xQu0C3OmxmbWDiDTnMUr8gr-FlilcMq4/view?usp=share_link)
