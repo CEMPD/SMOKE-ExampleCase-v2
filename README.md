@@ -2,7 +2,7 @@
 
 This SMOKE Example Case uses data from EPA's 2018v2 emissions modeling platform (https://www.epa.gov/air-emissions-modeling/2018v2-emissions-modeling-platform)
 
-In stead of using the 12US1 (12 km grid spacing) that covers entire the Continental United State and part of Canada and Mexico, this Example Case was developed for a smaller domain in 12 km grid spacing with 25x25 grid cells covering Long Island, New York and parts of the surrounding states. The specific grid comes from the Long Island Sound Tropospheric Ozone Study (LISTOS) (https://www-f.nescaum.org/documents/listos)
+Instead of using the 12US1 (12 km grid spacing) that covers entire the Continental United State and part of Canada and Mexico, this Example Case was developed for a smaller domain in 12 km grid spacing with 25x25 grid cells covering Long Island, New York and parts of the surrounding states. The specific grid comes from the Long Island Sound Tropospheric Ozone Study (LISTOS) (https://www-f.nescaum.org/documents/listos)
 
 Modeling episode: August 1st through 31st, 2018; Chemical mechanism: CB6AE7
 
