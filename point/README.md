@@ -89,6 +89,7 @@ emis_mole_airports_20180812_12LISTOS_cmaq_cb6ae7_2018gg_18j.ncf
 
 These ground-level emissions will be merged with the other non-elevated emissions in a later merge step.
 
+Reference Output Files for Comparison: [premerged_airports.tar.gz](https://drive.google.com/file/d/1519Ka4yCKmBNdglopLUfGW6EkDhAV2Q9/view?usp=share_link)
 
 ## Example Case: Processing *ptnonipm* Point Sector
 
@@ -181,7 +182,7 @@ stack_groups_ptnonipm_12LISTOS_2018gg_18j.ncf
 
 In addition to the stack groups file created by Elevpoint, now the directory contains an inline emissions file (inln_mole_ptnonipm_*) for each of the four days that Smkmerge ran. These files contain hourly speciated emissions for each source listed in the stack groups file. When used as inputs to CMAQ, the air quality model can calculate plume rise based on the data in the stack groups file and appropriately allocate the hourly emissions to each model layer.
 
-
+Reference Output Files for Comparison: [smoke_out_ptnonipm.tar.gz](https://drive.google.com/file/d/1t6-FIc_cKmj09YN1qF0mTkYmxuZz9_34/view?usp=share_link)
 
 ## Example Case: Processing Oil & Gas Point Sector as layered, gridded emissions
 This example case assumes that Oil & Gas point sectors had been processed for inline plume rise treatment in the photochemical model such as CMAQ (i.e., `Annual_pt_oilgas_onetime_12US1_2018gg_18j.csh` and then `Annual_pt_oilgas_daily_12US1_2018gg_18j.csh` were run).
@@ -223,3 +224,5 @@ This pt_oilgas_3d script calls the Laypoint program. Unlike the inline approach,
 ```
 emis_mole_pt_oilgas_3d_20180807_12LISTOS_cmaq_cb6ae7_2018gg_18j.ncf
 ```
+
+Reference Output Files for Comparison: [premerged_pt_oilgas_3d.tar.gz](https://drive.google.com/file/d/1wpv4UIB-6AxP_EG6Toc-Vf-IM6N_JA-Q/view?usp=share_link)
