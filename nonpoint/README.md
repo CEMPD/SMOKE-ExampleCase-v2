@@ -105,5 +105,5 @@ emis_mole_rwc_20180831_12LISTOS_cmaq_cb6ae7_2018gg_18j.ncf
 These files only contain the emissions from residential wood combustion. Later, you'll create similar files for additional sectors and finally merge all of these hourly gridded files together.
 
 
-Referenced Output Files for Comparison: [premerged_rwc.tar.gz](https://drive.google.com/file/d/1Ac69M6HGuh3ieBY03fbbMWlmsC2zrFyt/view?usp=share_link)
+Reference Output Files for Comparison: [premerged_rwc.tar.gz](https://drive.google.com/file/d/1Ac69M6HGuh3ieBY03fbbMWlmsC2zrFyt/view?usp=share_link)
 
