@@ -6,11 +6,13 @@ Instead of using the 12US1 (12 km grid spacing) that covers entire the Continent
 
 Modeling episode: August 1st through 31st, 2018; Chemical mechanism: CB6AE7
 
-In this example case, the CMAQ inputs produced per day are:
+In this Example Case, the CMAQ inputs produced per day are:
 + One file of gridded, low-level emissions data
 + Multiple files containing inline point source emissions data
 
 Entire dataset including SMOKE run scripts for this Example Case could be downloaded from [Google Drive](https://drive.google.com/file/d/1aREAz6z71WGdPoFJ2NkLutKBhWNyVgDf/view?usp=share_link)
+
+The TENEX C Shell (*tcsh*) is required for executing SMOKE run scripts in this Example Case
 
 List of sectors covered in this Example Case:
 
