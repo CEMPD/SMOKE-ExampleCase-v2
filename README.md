@@ -10,7 +10,7 @@ In this example case, the CMAQ inputs produced per day are:
 + One file of gridded, low-level emissions data
 + Multiple files containing inline point source emissions data
 
-Entire dataset including SMOKE run scripts for this Example Case could be downloaded from [Google Drive](https://drive.google.com/file/d/1PsxZAhui7sbSt3Qx_mN1I41q936JfiwT/view?usp=sharing)
+Entire dataset including SMOKE run scripts for this Example Case could be downloaded from [Google Drive](https://drive.google.com/file/d/1aREAz6z71WGdPoFJ2NkLutKBhWNyVgDf/view?usp=share_link)
 
 List of sectors covered in this Example Case:
 
